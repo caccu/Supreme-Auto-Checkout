@@ -1,0 +1,22 @@
+Edit file extension.js after installing the Supreme Auto-checkout bot package locally.
+
+On line 33029, replace the key: 'type':
+
+{
+     key: 'type',
+     value: function type (input, value, delay) {
+       return new _promise2.default (function (resolve) {
+         (function writer (i) {
+           if (value.length <= i ++) {
+             input.value = value;
+             resolve ();
+             return;
+           }
+           input.value = value;
+           setTimeout (function () {
+             writer (s);
+           }, 0);
+         }) (0);
+       });
+     }
+   },
